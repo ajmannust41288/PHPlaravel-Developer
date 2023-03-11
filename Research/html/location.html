@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Location </title>
+</head>
+<body>
+    <h1>JavaScript langauage </h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, repudiandae! A, officia! Vitae ullam doloremque officia consequuntur maxime molestias aut 
+        deleniti aspernatur. Suscipit numquam itaque odio ullam obcaecati aspernatur deleniti.</p>
+        <button onclick="reloadFunc()">Reload</button>
+        <button onclick="assignFunc()">Assign</button>
+        <button onclick="ReplaceFunc()">Replace</button>
+        <button onclick="backFunc()">backward</button>
+        <button onclick="forwardFunc()">Forward</button>
+        <button onclick="goFunc()">go</button>
+        <button onclick="goFunction()">goString</button>
+        <script>
+            function reloadFunc(){
+                location.reload();
+            }
+            function assignFunc(){
+                location.assign("https://www.google.com");
+            }
+            function ReplaceFunc(){
+                location.replace("https://ajman.art.blog");
+            }
+            function backFunc(){
+                history.back();
+            }
+            function forwardFunc(){
+               history.forward();
+            }
+            function goFunc(){
+                history.go(-2);
+            }
+            function goFunction(){
+                history.go("buttonarrange");
+            }
+        </script>
+</body>
+</html>

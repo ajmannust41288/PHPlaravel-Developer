@@ -1,0 +1,41 @@
+#outer{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: block;
+}
+#inner{
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: block;
+}
+#inner div{
+    box-sizing:content-box;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border: 1px solid black;
+    border-color: black;
+    display: inline;
+    background: white;
+   
+}
+#test{
+    display: block;
+    height: 400px;
+    width: 400px;
+    background: coral;
+    border: 1px solid black;
+}
+#test p{
+    display: block;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    background: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+}

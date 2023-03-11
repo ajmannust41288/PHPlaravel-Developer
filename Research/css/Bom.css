@@ -1,0 +1,65 @@
+/* body{
+    height: 7500px;
+    width: 5000px;
+}
+.relative {
+    padding: 10px;
+    position: fixed;
+    background-color: #fff;
+    margin: 10px;
+   } 
+   .navitem {
+     display:inline-block;
+     width: 70px; 
+     height: 50px; 
+     text-align: center;
+     border: 1px solid black;
+     background-color: #c5e82a;
+     color: blue;
+     cursor: pointer;
+     font-weight: bold;
+   }
+   element.style {
+}
+.blog-post-body .hsg-featured-snippet {
+    margin: 2.75rem 0;
+    padding: 2.75rem 1rem;
+    position: relative;
+    right: 1rem;
+    width: 100%;
+}
+.hsg-featured-snippet, .hsg-featured-snippet h2 {
+    border-radius: 0.1875rem;
+}
+
+.hsg-featured-snippet {
+    background-color: #f6f9fc;
+    box-sizing: content-box;
+    margin: 1rem;
+    max-width: 895px;
+    padding: 1.625rem 1.25rem;
+} */
+div:active{
+    color: red;
+    border: 2px solid green;
+    background-color: blueviolet;
+}
+a::after{
+    content: "\1F54B";
+    padding-left: 5px;
+    font-size: 30px;
+}
+li{
+    font-style: inherit;
+    font-size: 30px;
+    color: rgb(238, 10, 86);
+    background-image: url("/images/aj3.jpg");
+}
+li::before{
+    /* content: "\1F54B"; */
+    content: "\1F37A";
+    padding-left: 5px;
+    /* font-weight: 50px; */
+    font-size: 50px;
+    
+}

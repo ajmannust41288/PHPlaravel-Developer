@@ -1,0 +1,10 @@
+{
+    "name":"Yahoo Baba",
+    "age":25,
+    "married":true,
+    "kids":null,
+    "hobbies":["music","sports"],
+    "vehicle":[
+       {"type":"NMM","name":"drrr"} 
+    ]
+}

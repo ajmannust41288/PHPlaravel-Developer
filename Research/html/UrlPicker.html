@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Property Picker</title>
+    <script type="text/javascript">
+        var isNav = (typeof netscape != "undefined") ? true : false;
+        function fillLeftFrame() {
+            newURL = prompt("Enter the URL of a document to show in the leftframe","");
+if (newURL != null && newURL != "") {
+                parent.frames[0].location = newURL;
+            }
+        }
+        function showLocationData(form) {
+            for (var i = 0; i < 3; i++) {
+                if (form.whichFrame[i].checked) {
+                    var windName = form.whichFrame[i].value;
+                    break;
+                }
+            }
+            var theWind = "" + windName + ".location";
+            if (isNav) {
+                netscape.security.PrivilegeManager.enablePrivilege(
+                    "UniversalBrowserRead");
+            }
+            var theObj = eval(theWind);
+            form.windName.value = windName;
+            form.windHash.value = theObj.hash;
+            form.windHost.value = theObj.host;
+            form.windHostname.value = theObj.hostname;
+            form.windHref.value = theObj.href;
+            form.windPath.value = theObj.pathname;
+            form.windPort.value = theObj.port;
+            form.windProtocol.value = theObj.protocol;
+            form.windSearch.value = theObj.search;
+            if (isNav) {
+                netscape.security.PrivilegeManager.disablePrivilege(
+                    "UniversalBrowserRead");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    Click the "Open URL" button to enter the location of an HTML document to
+    display in the left frame of this window.
+    <form>
+        <input type="button" name="opener" value="Open URL..." onclick="fillLeftFrame()" />
+        <hr />
+        <center>
+            Select a window/frame. Then click the "Show Location Properties"
+            button to view each window.location property value for the desired
+            window.
+            <p><input type="radio" name="whichFrame" value="parent" checked="checked" />Parent window <input
+                    type="radio" name="whichFrame" value="parent.frames[0]" />Left frame <input type="radio"
+                    name="whichFrame" value="parent.frames[1]" />This
+                frame</p>
+            <p><input type="button" name="getProperties" value="Show Location Properties"
+                    onclick="showLocationData(this.form)" /> <input type="reset" value="Clear" /></p>
+            <table border="2">
+                <tr>
+                    <td align="right">Window:</td>
+                    <td><input type="text" name="windName" size="30" /></td>
+                </tr>
+                <tr>
+                    <td align="right">hash:</td>
+                    <td><input type="text" name="windHash" size="30" /></td>
+                </tr>
+                <tr>
+                    <td align="right">host:</td>
+                    <td><input type="text" name="windHost" size="30" /></td>
+                </tr>
+                <tr>
+                    <td align="right">hostname:</td>
+                    <td><input type="text" name="windHostname" size="30" /></td>
+                </tr>
+                <tr>
+                    <td align="right">href:</td>
+                    <td><textarea name="windHref" rows="3" cols="30" wrap="soft">
+</textarea></td>
+                </tr>
+                <tr>
+                    <td align="right">pathname:</td>
+                    <td><textarea name="windPath" rows="3" cols="30" wrap="soft">
+</textarea></td>
+                </tr>
+                <tr>
+                    <td align="right">port:</td>
+                    <td><input type="text" name="windPort" size="30" /></td>
+                </tr>
+                <tr>
+                    <td align="right">protocol:</td>
+                    <td><input type="text" name="windProtocol" size="30" /></td>
+                </tr>
+                <tr>
+                    <td align="right">search:</td>
+                    <td><textarea name="windSearch" rows="3" cols="30" wrap="soft"></textarea></td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+
+</html>

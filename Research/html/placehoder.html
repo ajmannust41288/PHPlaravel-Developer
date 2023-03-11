@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+/* #fname::-webkit-input-placeholder{
+color: #eee;
+opacity: 1;
+} */
+#fname::-webkit-input-placeholder{
+color: #eee;
+opacity: 1;
+}
+h1{
+    color: red;
+    text-shadow: 2px 2px 2px #aaa;
+}
+.post-body a{
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+    background-color: #b4e7f8;
+     transition:cubic-bezier(.33,.66,.66,1);
+    border-bottom: 3px solid #b4e7f8;
+    box-shadow: inset 0 -3px 0 #b4e7f8;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.post-body a:hover{
+    background-color: #b4e7f8;
+}
+#seltext{
+    -webkit-user-select: all;
+    user-select: all;
+}
+button:active{
+color: red;
+border: 2px solid blue;
+}
+.aj1::before{
+    content:url("/images/aj3.jpg");
+    display: inline-block;
+
+}
+li::before{
+    content: "\2605";/* The star character  */
+    color: rgb(216, 34, 34);
+    margin-right: 10px;
+    font-size: 60px;
+}
+blockquote{
+    color: #e8e7f9;
+    text-shadow: 2px 2px  rgb(0, 29, 217);
+    font-size: 20px;
+}
+blockquote::before{
+    content: "\"";
+    font-size: 50px;
+    color: blue;
+    
+}
+h2{
+    color: green;
+}
+h2::before{
+    content: "\1F4F3"; /* this is the unicode for a book */
+    font-size: 20px; /* adjust the size of the icon */
+    color: gray; /* adjust the color of the icon */
+    margin-right: 10px; /* add some space between the icon and the heading text */
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+    </style>
+
+    <title>placeholder css</title>
+</head>
+<body>
+    <h1>CSS to Add Shadows to Text Example</h1>
+    firstname: <input id="fname" type="text" placeholder="Enter first name">
+    <div>
+        <a class="aj1" href="https://ajman.art.blog">ajman khan website </a>
+    </div>
+    <br><br>
+    <div id="seltext">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloremque asperiores voluptatem tempora pariatur, inventore laboriosam minus suscipit maiores id, 
+        sunt distinctio cumque eius soluta qui possimus harum repellat libero omnis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloremque asperiores voluptatem tempora pariatur, inventore laboriosam minus suscipit maiores id, 
+        sunt distinctio cumque eius soluta qui possimus harum repellat libero omnis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Doloremque asperiores voluptatem tempora pariatur, inventore laboriosam minus suscipit maiores id, 
+        sunt distinctio cumque eius soluta qui possimus harum repellat libero omnis?</p>
+    </div>
+    <br><br>
+    <button>Click Me</button>
+    <br>
+    <ul>
+    <li>ajman khan</li>
+    <li>Zubair khan</li>
+    <li>Nobar nawaz</li>
+    <li>Zainab akram</li>
+    <li>Niha bassin</li>
+</ul>
+<br><br>
+<blockquote>
+    The greatest glory in living lies not in never 
+    falling, but in rising every time we fall. -Nelson Mandela
+</blockquote>
+<br>
+<di>
+    <h2 > ajman khan  &#127863;</h2>
+    <h2>Zubair khan</h2>
+    <h2>Nobar nawaz</h2>
+    <h2>Niha bassin</h2>
+    <h2>Zainab akram</h2>
+</di>
+<br>
+<div class="container">
+    <div class="float-left">Float Left</div>
+    <div class="float-right">Float Right</div>
+</div>
+</body>
+</html>

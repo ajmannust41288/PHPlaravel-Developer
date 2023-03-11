@@ -1,0 +1,20 @@
+[
+    {
+        "name":"Big Corporation",
+        "numberOfEmployees":10000,
+        "CEO":"Marray",
+        "Rating":3.6
+    },
+    {
+        "name":"Big Finance Company",
+        "numberOfEmployees":20000,
+        "CEO":"Noor ahmad",
+        "Rating":3.7
+    },
+    {
+        "name":"Small startup",
+        "numberOfEmployees":100,
+        "CEO":"Bilal ahmad",
+        "Rating":4.4
+    }
+]
