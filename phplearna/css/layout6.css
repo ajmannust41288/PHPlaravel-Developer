@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+#wrapper-div{
+    width: 60%;
+    min-height: 100px;
+    /* background-color: orange; */
+    /* to place it horizontally you have to use margin auto property */
+    margin: auto;
+}
+#logo-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: lightgray;
+    line-height: 50px;
+    padding-left: 2%;
+    margin-bottom: 10px;
+}
+#main-div{
+    width: 100%;
+    min-height: 500px;
+    /* background-color: red; */
+}
+#left-div{
+    width: 20%;
+    min-height: 500px;
+    /* background-color: green; */
+    float: left;
+}
+#right-div{
+    width: 70%;
+    min-height: 500px;
+    /* background-color: blue; */
+    float: right;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#header-banner-div{
+    width: 100%;
+    min-height: 150px;
+    background-color: lightgray;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 150px;
+}
+#bodyarea-div{
+    width: 100%;
+    min-height: 300px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 300px;
+}
+#footer-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: lightgray;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 50px;
+}

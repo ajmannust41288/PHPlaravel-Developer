@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    box-sizing: border-box  ;
+}
+#logo-nav-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+#logo-div{
+    width: 50%;
+    min-height: 50px;
+    /* background-color:gray; */
+    float: left;
+    line-height: 50px;
+    padding-left: 2%;
+}
+#nav-div{
+    width: 50%;
+    min-height: 50px;
+    /* background-color:gray; */
+    float: right;
+    line-height: 50px;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#header-banner-div{
+    width: 100%;
+min-height: 100px;
+background-color: lightgray;
+text-align: center;
+line-height: 100px;
+margin-bottom: 10px;
+}
+#introtxt-div{
+    width: 100%;
+    min-height: 80px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+#main-div{
+    width: 100%;
+    /* background-color:gray; */
+    min-height: 400px;
+    margin-bottom: 10px;
+}
+#box{
+    width: 20%;
+    min-height: 400px;
+    text-align: center;
+    line-height: 400px;
+    float: left;
+    background-color: lightgray;
+}
+#main-div #box:nth-child(2){
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#main-div #box:nth-child(3){
+    margin-right: 8%;
+}
+#footer-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 50px;
+}
+#wrapper-div{
+    margin: auto;
+    width: 80%;
+}
+body{
+    background-color: chartreuse;
+}
